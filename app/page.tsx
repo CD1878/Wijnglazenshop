@@ -85,10 +85,10 @@ export default function Home() {
             
             <div className="absolute right-0 bottom-10 md:bottom-20 pointer-events-none z-10 w-[70vw] md:w-[40vw] max-w-[600px] h-[40vh] md:h-[60vh]">
               <Image 
-                src="/glasses.png" 
+                src="/glasses_transparent.png" 
                 alt="Mooie glazen" 
                 fill 
-                className="object-contain mix-blend-multiply opacity-90 object-bottom translate-x-12" 
+                className="object-contain opacity-100 object-bottom translate-x-12" 
               />
             </div>
 
