@@ -72,8 +72,11 @@ export default function Home() {
         <div className="relative z-10 w-full h-full flex flex-col justify-end">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 relative">
             <div className="relative z-20">
-              <div className="inline-block px-4 py-1.5 mb-8 bg-white/95 text-black border border-black/10 text-[9px] uppercase tracking-[0.2em] font-medium shadow-md rounded-full">
-                <span className="text-yellow-500 font-bold mr-2">✦</span> Lente Deal: nu tijdelijk 15% korting op merk x
+              <div className="flex items-center gap-4 mb-8 opacity-80">
+                <div className="w-12 h-[1px] bg-black/60 hidden md:block"></div>
+                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.3em] text-black/80 font-medium">
+                  Lente Deal: nu tijdelijk 15% korting op merk x
+                </p>
               </div>
               <h1 className="font-serif text-[15vw] md:text-[10vw] leading-[0.85] font-light tracking-tighter mb-4">
                 PERFECT <span className="italic text-black/70">glas</span>
