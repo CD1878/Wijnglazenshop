@@ -62,7 +62,7 @@ export default function Home() {
             src="/vineyard_header.png"
             alt="Elegante wijngaard"
             fill
-            className="object-cover opacity-[45%]"
+            className="object-cover opacity-[30%]"
             referrerPolicy="no-referrer"
             priority
           />
@@ -72,9 +72,9 @@ export default function Home() {
         <div className="relative z-10 w-full h-full flex flex-col justify-end">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 relative">
             <div className="relative z-20">
-              <div className="flex items-center gap-4 mb-8 opacity-80">
-                <div className="w-12 h-[1px] bg-black/60 hidden md:block"></div>
-                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.3em] text-black/80 font-medium">
+              <div className="flex items-center gap-4 mb-8">
+                <div className="w-12 h-[2px] bg-black/80 hidden md:block"></div>
+                <p className="text-[12px] md:text-[14px] uppercase tracking-[0.3em] text-black font-bold">
                   Lente Deal: nu tijdelijk 15% korting op merk x
                 </p>
               </div>
