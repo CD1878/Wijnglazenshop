@@ -87,7 +87,7 @@ export default function Home() {
             </div>
             
             <div 
-              className="absolute right-0 md:right-10 bottom-0 pointer-events-none z-10 w-[80vw] md:w-[50vw] max-w-[550px] h-[40vh] md:h-[65vh] opacity-85"
+              className="absolute right-0 md:right-10 bottom-0 pointer-events-none z-10 w-[65vw] md:w-[40vw] max-w-[450px] h-[35vh] md:h-[55vh] opacity-85"
               style={{ WebkitMaskImage: 'linear-gradient(to bottom, black 75%, transparent 100%)', maskImage: 'linear-gradient(to bottom, black 75%, transparent 100%)' }}
             >
               <Image 
