@@ -37,15 +37,22 @@ export default function Home() {
     <main className="min-h-screen flex flex-col selection:bg-black selection:text-white">
       {/* Navigation */}
       <header className="fixed top-0 w-full z-50 flex items-center justify-between px-6 py-8 bg-white/80 backdrop-blur-md border-b border-black/5">
-        <button className="text-[10px] uppercase tracking-[0.2em] font-medium hover:opacity-70 transition-opacity">
-          Menu
-        </button>
+        <div className="flex-1">
+          <button className="text-[10px] uppercase tracking-[0.2em] font-medium hover:opacity-70 transition-opacity">
+            Menu
+          </button>
+        </div>
         <div className="font-serif text-2xl tracking-widest uppercase">
           Wijnglazenshop
         </div>
-        <button className="text-[10px] uppercase tracking-[0.2em] font-medium hover:opacity-70 transition-opacity">
-          Winkelwagen [0]
-        </button>
+        <div className="flex-1 flex justify-end items-center gap-6">
+          <button className="text-[10px] uppercase tracking-[0.2em] font-medium hover:opacity-70 transition-opacity">
+            Winkelwagen [0]
+          </button>
+          <button className="hidden md:block bg-white text-black border border-black/20 shadow-sm text-[10px] uppercase tracking-[0.2em] font-medium px-5 py-2.5 rounded-full hover:bg-black hover:text-white transition-colors">
+            Shop Nu
+          </button>
+        </div>
       </header>
 
       {/* Hero Section */}
@@ -55,25 +62,40 @@ export default function Home() {
             src="/vineyard_header.png"
             alt="Elegante wijngaard"
             fill
-            className="object-cover opacity-60"
+            className="object-cover opacity-[45%]"
             referrerPolicy="no-referrer"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-white via-white/50 to-transparent" />
         </div>
         
-        <div className="relative z-10 flex flex-col md:flex-row md:items-end justify-between gap-8">
-          <div>
-            <h1 className="font-serif text-[15vw] md:text-[10vw] leading-[0.85] font-light tracking-tighter mb-4">
-              PERFECT <span className="italic text-black/70">glas</span>
-            </h1>
-            <p className="text-[11px] uppercase tracking-[0.2em] max-w-sm text-black/60 leading-relaxed font-bold bg-white/40 p-2 rounded">
-              Mondgeblazen, flinterdunne kristalglazen ontworpen om de nuances van elke wijn te verheffen.
-            </p>
+        <div className="relative z-10 w-full h-full flex flex-col justify-end">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 relative">
+            <div className="relative z-20">
+              <div className="inline-block px-4 py-1.5 mb-8 bg-white/95 text-black border border-black/10 text-[9px] uppercase tracking-[0.2em] font-medium shadow-md rounded-full">
+                <span className="text-yellow-500 font-bold mr-2">✦</span> Lente Deal: nu tijdelijk 15% korting op merk x
+              </div>
+              <h1 className="font-serif text-[15vw] md:text-[10vw] leading-[0.85] font-light tracking-tighter mb-4">
+                PERFECT <span className="italic text-black/70">glas</span>
+              </h1>
+              <p className="text-[11px] uppercase tracking-[0.2em] max-w-sm text-black/60 leading-relaxed font-bold bg-white/40 p-2 rounded">
+                Mondgeblazen, flinterdunne kristalglazen ontworpen om de nuances van elke wijn te verheffen.
+              </p>
+            </div>
+            
+            <div className="absolute right-0 bottom-10 md:bottom-20 pointer-events-none z-10 w-[70vw] md:w-[40vw] max-w-[600px] h-[40vh] md:h-[60vh]">
+              <Image 
+                src="/glasses.png" 
+                alt="Mooie glazen" 
+                fill 
+                className="object-contain mix-blend-multiply opacity-90 object-bottom translate-x-12" 
+              />
+            </div>
+
+            <button className="relative z-20 flex items-center gap-4 text-[11px] uppercase tracking-[0.2em] border border-black/30 rounded-full px-8 py-4 hover:bg-black hover:text-white bg-white/70 shadow-sm transition-all duration-300">
+              Bekijk Collectie <ArrowRight className="w-4 h-4" />
+            </button>
           </div>
-          <button className="flex items-center gap-4 text-[11px] uppercase tracking-[0.2em] border border-black/30 rounded-full px-8 py-4 hover:bg-black hover:text-white bg-white/70 transition-all duration-300">
-            Bekijk Collectie <ArrowRight className="w-4 h-4" />
-          </button>
         </div>
       </section>
 
@@ -121,8 +143,8 @@ export default function Home() {
             <div className="relative aspect-square rounded-full overflow-hidden border border-black/10 p-4">
               <div className="relative w-full h-full rounded-full overflow-hidden">
                 <Image
-                  src="https://picsum.photos/seed/glassartisan/800/800"
-                  alt="Artisan glass blowing"
+                  src="/pouring_wine.png"
+                  alt="Inschenken van wijn"
                   fill
                   className="object-cover opacity-90"
                   referrerPolicy="no-referrer"
