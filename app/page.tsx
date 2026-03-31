@@ -7,28 +7,28 @@ const products = [
     name: 'Riedel Vinum',
     category: 'Rode Wijn',
     price: '€65',
-    image: 'https://picsum.photos/seed/bordeauxglass/800/1200',
+    image: 'https://primary.jwwb.nl/public/u/l/d/temp-gsjtwlqpbvpnvbisphtr/432-high-xcll2q.webp?enable-io=true&enable=upscale&crop=1%3A1&width=800',
   },
   {
     id: 2,
     name: 'Zalto Denk\'Art',
     category: 'Rode Wijn',
     price: '€55',
-    image: 'https://picsum.photos/seed/burgundyglass/800/1200',
+    image: 'https://primary.jwwb.nl/public/u/l/d/temp-gsjtwlqpbvpnvbisphtr/zalto-glas-intro-sortiment-1920x0-c-default-2x-high-lal5wn.webp?enable-io=true&enable=upscale&crop=1%3A1&width=800',
   },
   {
     id: 3,
     name: 'Schott Zwiesel',
     category: 'Witte Wijn',
     price: '€45',
-    image: 'https://picsum.photos/seed/chardonnayglass/800/1200',
+    image: 'https://primary.jwwb.nl/public/u/l/d/temp-gsjtwlqpbvpnvbisphtr/spiegelau-definition-kristalglas-bourgogneglas-high.webp?enable-io=true&enable=upscale&crop=1%3A1&width=800',
   },
   {
     id: 4,
-    name: 'Spiegelau Authentis',
-    category: 'Champagne',
-    price: '€42',
-    image: 'https://picsum.photos/seed/fluteglass/800/1200',
+    name: 'Zieher Vision',
+    category: 'Rode Wijn',
+    price: '€79',
+    image: 'https://primary.jwwb.nl/public/u/l/d/temp-gsjtwlqpbvpnvbisphtr/zieher-vision-intense-wijnglas-2-standard.webp',
   },
 ];
 
@@ -83,12 +83,12 @@ export default function Home() {
               </p>
             </div>
             
-            <div className="absolute right-0 bottom-10 md:bottom-20 pointer-events-none z-10 w-[70vw] md:w-[40vw] max-w-[600px] h-[40vh] md:h-[60vh]">
+            <div className="absolute right-0 bottom-10 md:bottom-20 pointer-events-none z-10 w-[80vw] md:w-[60vw] max-w-[800px] h-[50vh] md:h-[70vh]">
               <Image 
-                src="/glasses_transparent.png" 
-                alt="Mooie glazen" 
+                src="/hero_glasses.png" 
+                alt="4 wijnglazen op een rij" 
                 fill 
-                className="object-contain opacity-100 object-bottom translate-x-12" 
+                className="object-contain opacity-100 object-bottom translate-x-12 md:translate-x-24 drop-shadow-2xl" 
               />
             </div>
 
@@ -109,6 +109,7 @@ export default function Home() {
                   src={product.image}
                   alt={product.name}
                   fill
+                  unoptimized
                   className="object-cover transition-all duration-700 group-hover:scale-105"
                   referrerPolicy="no-referrer"
                 />
