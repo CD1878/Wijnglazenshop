@@ -4,30 +4,30 @@ import { ArrowRight } from 'lucide-react';
 const products = [
   {
     id: 1,
-    name: 'The Bordeaux',
-    category: 'Red Wine',
-    price: 'â‚¬45',
+    name: 'Riedel Vinum',
+    category: 'Rode Wijn',
+    price: '€65',
     image: 'https://picsum.photos/seed/bordeauxglass/800/1200',
   },
   {
     id: 2,
-    name: 'The Burgundy',
-    category: 'Red Wine',
-    price: 'â‚¬48',
+    name: 'Zalto Denk\'Art',
+    category: 'Rode Wijn',
+    price: '€55',
     image: 'https://picsum.photos/seed/burgundyglass/800/1200',
   },
   {
     id: 3,
-    name: 'The Chardonnay',
-    category: 'White Wine',
-    price: 'â‚¬42',
+    name: 'Schott Zwiesel',
+    category: 'Witte Wijn',
+    price: '€45',
     image: 'https://picsum.photos/seed/chardonnayglass/800/1200',
   },
   {
     id: 4,
-    name: 'The Flute',
-    category: 'Sparkling',
-    price: 'â‚¬38',
+    name: 'Spiegelau Authentis',
+    category: 'Champagne',
+    price: '€42',
     image: 'https://picsum.photos/seed/fluteglass/800/1200',
   },
 ];
@@ -41,10 +41,10 @@ export default function Home() {
           Menu
         </button>
         <div className="font-serif text-2xl tracking-widest uppercase">
-          VinoGlass
+          Wijnglazenshop
         </div>
         <button className="text-[10px] uppercase tracking-[0.2em] font-medium hover:opacity-70 transition-opacity">
-          Cart [0]
+          Winkelwagen [0]
         </button>
       </header>
 
@@ -52,10 +52,10 @@ export default function Home() {
       <section className="relative h-screen flex flex-col justify-end p-6 pb-12 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://picsum.photos/seed/lightwineglass/1920/1080?blur=2"
-            alt="Elegant wine glass"
+            src="/vineyard_header.png"
+            alt="Elegante wijngaard"
             fill
-            className="object-cover opacity-30"
+            className="object-cover opacity-60"
             referrerPolicy="no-referrer"
             priority
           />
@@ -65,14 +65,14 @@ export default function Home() {
         <div className="relative z-10 flex flex-col md:flex-row md:items-end justify-between gap-8">
           <div>
             <h1 className="font-serif text-[15vw] md:text-[10vw] leading-[0.85] font-light tracking-tighter mb-4">
-              PURE <span className="italic text-black/70">form</span>
+              PERFECT <span className="italic text-black/70">glas</span>
             </h1>
-            <p className="text-[11px] uppercase tracking-[0.2em] max-w-sm text-black/60 leading-relaxed">
-              Mouth-blown, ultra-thin crystal glasses designed to elevate the nuances of every vintage.
+            <p className="text-[11px] uppercase tracking-[0.2em] max-w-sm text-black/60 leading-relaxed font-bold bg-white/40 p-2 rounded">
+              Mondgeblazen, flinterdunne kristalglazen ontworpen om de nuances van elke wijn te verheffen.
             </p>
           </div>
-          <button className="flex items-center gap-4 text-[11px] uppercase tracking-[0.2em] border border-black/30 rounded-full px-8 py-4 hover:bg-black hover:text-white transition-all duration-300">
-            Explore Collection <ArrowRight className="w-4 h-4" />
+          <button className="flex items-center gap-4 text-[11px] uppercase tracking-[0.2em] border border-black/30 rounded-full px-8 py-4 hover:bg-black hover:text-white bg-white/70 transition-all duration-300">
+            Bekijk Collectie <ArrowRight className="w-4 h-4" />
           </button>
         </div>
       </section>
@@ -108,13 +108,13 @@ export default function Home() {
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-16">
           <div className="flex-1">
             <h2 className="font-serif text-5xl md:text-7xl font-light leading-tight mb-8">
-              The vessel is as <span className="italic text-black/50">important</span> as the vintage.
+              Het glas is net zo <span className="italic text-black/50">belangrijk</span> als de wijn.
             </h2>
             <p className="text-black/60 leading-relaxed font-light max-w-md mb-10">
-              Our glasses are crafted by master artisans using traditional glass-blowing techniques. The incredibly thin rim and precise bowl shape are engineered to direct the wine to the optimal part of your palate, revealing the true soul of the wine.
+              Onze glazen worden vervaardigd door meester-ambachtslieden met behulp van traditionele glasblaastechnieken. De ongelooflijk dunne rand en de precieze vorm van de kelk zijn ontworpen om de wijn naar het optimale deel van uw gehemelte te leiden, waardoor de ware ziel van de wijn wordt onthuld.
             </p>
             <a href="#" className="inline-block text-[10px] uppercase tracking-[0.2em] border-b border-black/30 pb-1 hover:border-black transition-colors">
-              Read our story
+              Lees ons verhaal
             </a>
           </div>
           <div className="flex-1 w-full">
@@ -137,16 +137,16 @@ export default function Home() {
       <footer className="border-t border-black/10 py-12 px-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="font-serif text-2xl tracking-widest uppercase">
-            VinoGlass
+            Wijnglazenshop
           </div>
           <div className="flex flex-wrap justify-center gap-8 text-[10px] uppercase tracking-[0.2em] text-black/50">
             <a href="#" className="hover:text-black transition-colors">Instagram</a>
             <a href="#" className="hover:text-black transition-colors">Contact</a>
-            <a href="#" className="hover:text-black transition-colors">Shipping</a>
-            <a href="#" className="hover:text-black transition-colors">Terms</a>
+            <a href="#" className="hover:text-black transition-colors">Verzending</a>
+            <a href="#" className="hover:text-black transition-colors">Voorwaarden</a>
           </div>
           <div className="text-[10px] uppercase tracking-[0.2em] text-black/30">
-            &copy; 2026
+            &copy; 2026 Wijnglazenshop
           </div>
         </div>
       </footer>
