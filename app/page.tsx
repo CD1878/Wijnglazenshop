@@ -57,16 +57,18 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative h-screen flex flex-col justify-end p-6 pb-12 overflow-hidden">
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 bg-[#f8f8f8]">
           <Image
             src="/vineyard_header.png"
             alt="Elegante wijngaard"
             fill
-            className="object-cover opacity-[30%]"
+            className="object-cover"
             referrerPolicy="no-referrer"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-white via-white/50 to-transparent" />
+          <div className="absolute inset-0 bg-black/5 mix-blend-overlay" />
+          <div className="absolute inset-0 bg-gradient-to-t from-white via-white/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/50 to-transparent w-[80%] md:w-[60%]" />
         </div>
         
         <div className="relative z-10 w-full h-full flex flex-col justify-end">
