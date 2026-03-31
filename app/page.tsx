@@ -88,10 +88,10 @@ export default function Home() {
             
             <div className="absolute right-0 bottom-10 md:bottom-20 pointer-events-none z-10 w-[80vw] md:w-[60vw] max-w-[800px] h-[50vh] md:h-[70vh]">
               <Image 
-                src="/hero_glasses.png" 
-                alt="4 wijnglazen op een rij" 
+                src="/hero_glasses_final.jpeg" 
+                alt="Riedel wijnglazen op een rij" 
                 fill 
-                className="object-contain opacity-100 object-bottom translate-x-12 md:translate-x-24 drop-shadow-2xl" 
+                className="object-contain opacity-100 mix-blend-multiply object-bottom md:translate-x-12" 
               />
             </div>
 
