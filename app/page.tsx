@@ -86,12 +86,15 @@ export default function Home() {
               </p>
             </div>
             
-            <div className="absolute right-0 bottom-10 md:bottom-20 pointer-events-none z-10 w-[60vw] md:w-[40vw] max-w-[500px] h-[40vh] md:h-[50vh]">
+            <div 
+              className="absolute right-0 bottom-0 pointer-events-none z-10 w-[60vw] md:w-[45vw] max-w-[480px] h-[45vh] md:h-[60vh] opacity-80"
+              style={{ WebkitMaskImage: 'linear-gradient(to bottom, black 60%, transparent 100%)', maskImage: 'linear-gradient(to bottom, black 60%, transparent 100%)' }}
+            >
               <Image 
                 src="/hero_glasses_final.png" 
                 alt="Riedel wijnglazen op een rij" 
                 fill 
-                className="object-contain opacity-100 object-bottom md:translate-x-12 drop-shadow-xl" 
+                className="object-contain object-bottom md:translate-x-12 mix-blend-multiply" 
               />
             </div>
 
